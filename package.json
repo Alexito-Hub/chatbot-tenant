@@ -1,0 +1,29 @@
+{
+  "name": "upla-multi-portfolio-chatbot",
+  "version": "1.0.0",
+  "description": "Backend Multi-Tenant en TypeScript estricto para Chatbot de Portafolios Académicos (Azure App Service + @google/genai)",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:client": "tsc -p tsconfig.client.json",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/server.js",
+    "dev": "tsc -w"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
